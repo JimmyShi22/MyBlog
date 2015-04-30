@@ -1,9 +1,9 @@
 username: JimmyShi22
-baseurl: /StrayBirds
+baseurl: /MyBlog
 markdown: redcarpet
 safe: false
 highlighter: pygments
-title: 飞鸟集
+title: minimal 
 description: 人生到处知何似，应似飞鸿踏雪泥
 theme: leap-day
 disqusname: JimmyShi22
