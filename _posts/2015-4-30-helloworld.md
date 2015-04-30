@@ -20,7 +20,7 @@ int main()
 }
 ```
 
-```Java
+```
 #include <iostream>
 using namespace std;
 
