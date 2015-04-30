@@ -20,15 +20,12 @@ int main()
 }
 ```
 
-```c#
-#include <iostream>
-using namespace std;
+```python
+print hello world
+```
 
-int main()
-{
-    cout << "Hello World!" << endl;
-    return 0;
-}
+```shell
+echo "hello world"
 ```
 
 ...
