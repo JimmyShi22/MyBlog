@@ -28,4 +28,6 @@ print hello world
 echo "hello world"
 ```
 
+![](http://static.hihocoder.com/images/hiho.jpg)
+
 ...
