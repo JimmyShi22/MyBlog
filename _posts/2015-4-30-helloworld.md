@@ -20,7 +20,7 @@ int main()
 }
 ```
 
-```
+```c
 #include <iostream>
 using namespace std;
 
