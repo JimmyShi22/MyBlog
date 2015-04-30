@@ -24,7 +24,7 @@ int main()
 print hello world
 ```
 
-```shell
+```sh
 echo "hello world"
 ```
 
