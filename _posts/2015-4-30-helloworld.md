@@ -20,7 +20,7 @@ int main()
 }
 ```
 
-```c
+```c#
 #include <iostream>
 using namespace std;
 
