@@ -6,7 +6,7 @@ highlighter: pygments
 title: Jimmy Blog 
 description: Welcome!
 theme: minimal
-disqusname: JimmyShi22
+disqusname: MyBlog
 comments: true
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine
