@@ -1,5 +1,5 @@
 username: JimmyShi22
-baseurl: /MyBlog
+baseurl: /myblog
 markdown: redcarpet
 safe: false
 highlighter: pygments
