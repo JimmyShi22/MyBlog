@@ -1,10 +1,10 @@
 ---
 layout: default
-title: hihocoder 1136 : Professor Q's Software
+title: Hello World!
 comments: true
 ---
 
-###hihocoder: 1136 : Professor Q's Software
+##hihocoder: 1136 : Professor Q's Software
 时间限制:10000ms
 单点时限:1000ms
 内存限制:256MB
