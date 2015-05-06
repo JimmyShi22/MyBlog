@@ -55,7 +55,8 @@ For each test case, output a line with N numbers Ans1, Ans2, ... , AnsN. Ansi is
 
 
 这一题把关系树建好，是一个dag图。在发信号的时候只用更新信号触发的module，即module内的counter++。之后从dag图的末尾向上遍历，将其所有父亲节点的counter加到自身的counter上，即为本结点的值。遍历过的isCalc的tag置为true，避免重复计算。
-```C++
+
+```c++
 #include <iostream>
 #include <cstdio>
 #include <vector>
@@ -162,3 +163,4 @@ int main()
 }
 
 ```
+
