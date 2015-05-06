@@ -11,12 +11,12 @@ comments: true
 
 内存限制:256MB
 
-描述
+###描述
 
 Professor Q develops a new software. The software consists of N modules which are numbered from 1 to N. The i-th module will be started up by signal Si. If signal Si is generated multiple times, the i-th module will also be started multiple times. Two different modules may be started up by the same signal. During its lifecircle, the i-th module will generate Ki signals: E1, E2, ..., EKi. These signals may start up other modules and so on. Fortunately the software is so carefully designed that there is no loop in the starting chain of modules, which means eventually all the modules will be stoped. Professor Q generates some initial signals and want to know how many times each module is started.signals.png
 
 
-输入
+###输入
 
 The first line contains an integer T, the number of test cases. T test cases follows.
 
@@ -40,12 +40,12 @@ For 100% data, all 1 <= T <= 5, N, M <= 105, 0 <= K <= 3, 0 <= S, E <= 105.
 Hint: HUGE input in this problem. Fast IO such as scanf and BufferedReader are recommended.
 
 
-输出
+###输出
 
 For each test case, output a line with N numbers Ans1, Ans2, ... , AnsN. Ansi is the number of times that the i-th module is started. In case the answers may be too large, output the answers modulo 142857 (the remainder of division by 142857).
 
 
-样例输入
+###样例输入
 
 3
 
@@ -83,7 +83,7 @@ For each test case, output a line with N numbers Ans1, Ans2, ... , AnsN. Ansi is
 
 5 2 6 7
 
-样例输出
+###样例输出
 
 1 1 3
 
