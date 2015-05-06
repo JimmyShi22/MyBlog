@@ -1,6 +1,6 @@
 ---
 layout: default
-title: hihocoder: 1136 : Professor Q's Software
+title: hihocoder:1136
 comments: true
 ---
 
