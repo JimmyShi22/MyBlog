@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hello World!
+title: hihocoder: 1136 : Professor Q's Software
 comments: true
 ---
 
