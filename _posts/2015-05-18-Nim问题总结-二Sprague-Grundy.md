@@ -92,3 +92,45 @@ Sprague-Grundy Theorem就是：g(G)=g(G1)^g(G2)^…^g(Gn)。
 3.根据输入的每个石堆的值x，计算g(x)， 并将g(x)异或求和。若结果为 0,则为P局面，先手输，若为1，位N局面，先手赢。
 
 相关例题：http://hihocoder.com/contest/hiho46/problem/1
+代码如下：
+```C++
+#include <iostream>
+using namespace std;
+
+int get_sg(int k)
+{
+	if (k == 0)
+		return 0;
+	else
+	{
+		if (k % 4 == 0)
+			return k - 1;
+		else if (k % 4 == 3)
+			return k + 1;
+		else
+			return k;
+	}
+}
+
+int main()
+{
+	int N;
+	cin >> N;
+
+	int sum = 0;
+	for (int i = 0; i < N; i++)
+	{
+		int a;
+		cin >> a;
+		sum ^= get_sg(a);
+	}
+
+	if (sum)
+		cout << "Alice" << endl;
+	else
+		cout << "Bob" << endl;
+
+	return 0;
+}
+
+```
