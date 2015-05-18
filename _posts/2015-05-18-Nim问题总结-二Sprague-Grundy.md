@@ -87,7 +87,8 @@ Sprague-Grundy Theorem就是：g(G)=g(G1)^g(G2)^…^g(Gn)。
 
 1.找到每个石堆的迭代关系。
 
-2.根据x值推导g(x)。 g(x)=mex{ g(y) | y是x的后继 }. 若一个k对应生成两个或多个值，则根据SG定理，g(X) = g(x[1]) xor g(x[2]) xor … xor g(x[n])求出g(x)。
+2.根据x值推导g(x)。 g(x)=mex{ g(y) | y是x的后继 }. 若一个k对应生成两个或多个值，则根据SG定理，g(X) = g(x[1]) xor g(x[2]) xor … xor g(x[n])求出g(x)。（通过找规律生成g的映射方式能够大大缩短计算时间）。
 
 3.根据输入的每个石堆的值x，计算g(x)， 并将g(x)异或求和。若结果为 0,则为P局面，先手输，若为1，位N局面，先手赢。
 
+相关例题：http://hihocoder.com/contest/hiho46/problem/1
