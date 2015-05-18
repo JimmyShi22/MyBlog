@@ -3,7 +3,7 @@ layout: default
 title: Nim问题总结-二Sprague-Grundy
 comments: true
 ---
-##Sprague-Grundy 函数
+##Sprague-Grundy 函数（转）
 ###声明
    笔者最近意外的发现 笔者的个人网站 http://tiankonguse.com/ 的很多文章被其它网站转载，但是转载时未声明文章来源或参考自 http://tiankonguse.com/ 网站，因此，笔者添加此条声明。
     郑重声明：这篇记录《 博弈论之Sprague-Grundy 函数》转载自 http://tiankonguse.com/ 的这条记录：http://tiankonguse.com/record/record.php?id=676
