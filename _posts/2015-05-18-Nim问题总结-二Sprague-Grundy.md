@@ -93,7 +93,7 @@ Sprague-Grundy Theorem就是：g(G)=g(G1)^g(G2)^…^g(Gn)。
 
 相关例题：http://hihocoder.com/contest/hiho46/problem/1
 代码如下：
-```C++
+```c++
 #include <iostream>
 using namespace std;
 
