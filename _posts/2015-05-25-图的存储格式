@@ -1,0 +1,157 @@
+---
+layout: default
+title: 图的存储格式
+comments: true
+---
+
+经典的图的存储格式为两种：
+
+1、邻接矩阵
+
+2、邻接表
+
+##邻接矩阵
+int edge[ MAXN ][ MAXN ];
+
+##邻接表
+###结构体表示法：
+http://blog.csdn.net/linxinyuluo/article/details/6847851
+
+###数组表示法：
+http://hihocoder.com/contest/hiho47/problem/1
+
+```c++
+int head[ MAXN + 1] = {0};	// 表示头指针，初始化为0
+int p[ MAXM + 1];		// 表示指向的节点
+int next[ MAXM + 1] = {0}; 	// 模拟指针，初始化为0
+int edgecnt;			// 记录边的数量
+
+void addedge(int u, int v) {	// 添加边(u,v)
+	++edgecnt;
+	p[ edgecnt ] = v;
+	next[ edgecnt ] = head[u];
+	head[u] = edgecnt;
+}
+
+// 枚举边的过程，u为起始点
+for (int i = head[u]; i; i = next[i]) {
+	v = p[i];
+	...
+}
+```
+
+###比较：结构体表示法 & 数组表示法
+数组表示法优点：
+1、占用空间小
+2、实现简单
+
+结构体表示法优点：
+1、遍历一个点的邻接点时，局部性较好
+2、拓展性好，能够动态增减结点，无最大值限制
+
+##举例
+hihocoder week47 拓扑排序·一：http://hihocoder.com/contest/hiho47/problem/1
+
+```c++
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+const int MAXN = 100000;
+const int MAXM = 5000000;
+
+int head[MAXN + 1] = { 0 };	// 表示头指针，初始化为0
+int p[MAXM + 1];		// 表示指向的节点
+int nexte[MAXM + 1] = { 0 }; 	// 模拟指针，初始化为0
+int edgecnt;			// 记录边的数量
+
+void addedge(int u, int v) {	// 添加边(u,v)
+	++edgecnt;
+	p[edgecnt] = v;
+	nexte[edgecnt] = head[u];
+	head[u] = edgecnt;
+}
+
+// 枚举边的过程，u为起始点
+/*for (int i = head[u]; i; i = next[i]) {
+	v = p[i];
+	...
+}*/
+int N, M;
+void calcin(int degin[])
+{
+	for (int k = 1; k <= N; k++)
+	{
+		for (int i = head[k]; i; i = nexte[i]) {
+			int v = p[i];
+			degin[v]++;
+		}
+	}
+}
+
+void checkring(queue<int> Q, int degin[])
+{
+	while (!Q.empty())
+	{
+		int s = Q.front();
+		Q.pop();
+		N--;
+		for (int i = head[s]; i; i = nexte[i]) {
+			int v = p[i];
+			degin[v]--;
+			if (degin[v] == 0)
+				Q.push(v);
+		}
+	}
+}
+
+int main()
+{
+	//freopen("t.txt","r", stdin);
+	int T;
+	cin >> T;
+	for (int ti = 0; ti < T; ti++)
+	{
+
+		memset(head, 0, sizeof(head));
+		memset(p, 0, sizeof(p));
+		memset(nexte, 0, sizeof(nexte));
+		edgecnt = 0;
+
+		cin >> N >> M;
+		for (int i = 0; i < M; i++)
+		{
+			int u, v;
+			scanf("%d %d", &u, &v);
+			addedge(u, v);
+		}
+
+		int degin[MAXN + 1] = { 0 };
+		calcin(degin);
+
+		queue<int> Q;
+		for (int i = 1; i <= N; i++)
+		{
+			if (degin[i] == 0)
+				Q.push(i);
+		}
+
+		if (Q.empty())
+			cout << "Wrong" << endl;
+		else
+		{
+			checkring(Q, degin);
+			cout << (N > 0 ? "Wrong" : "Correct") << endl;
+		}
+
+	}
+
+	return 0;
+}
+```
+
+
+
+
