@@ -1,9 +1,9 @@
 
-/-/-/-
-layout: default
-title: Hello World!
-comments: true
-/-/-/-
+---<br>
+layout: default<br>
+title: Hello World!<br>
+comments: true<br>
+---
 
 ==========
 StrayBirds
