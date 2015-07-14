@@ -1,7 +1,7 @@
 
 ---<br>
 layout: default<br>
-title: Hello World!<br>
+title: Hello World<br>
 comments: true<br>
 ---
 
