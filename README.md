@@ -3,9 +3,7 @@
 layout: default<br>
 title: Hello World<br>
 comments: true<br>
----<br>
 
----<br>
 使用forkosh插入公式的方法是<br>
 ```
 <img src="http://www.forkosh.com/mathtex.cgi? 在此处插入Latex公式"><br>
@@ -15,7 +13,8 @@ comments: true<br>
 ```
 <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"><br>
 ```
-<img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"><br>
+<img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">
+<br>
 ---<br>
 
 ==========
