@@ -8,9 +8,12 @@ comments: true
 
 ###题目
 时间限制:10000ms
+
 单点时限:1000ms
+
 内存限制:256MB
 描述
+
 ![](http://media.hihocoder.com//problem_images/20141019/14136954837870.png)
 ![](http://media.hihocoder.com//problem_images/20141019/14136954928568.png)
 
@@ -41,15 +44,16 @@ Type4: *CMD 4 i j*(i, j are integers, 1 <= i <= j <= N):
 >This is a recursive operation, which means:
 
 >
-'''
+```
 If i > j:
 	Do Nothing
 Else:
 	CMD 4 i+1 j
 	CMD 2 i j 1
-'''
+```
 
 >For example: ABCDEFG => CMD 4 2 3 => A*CE*DEFG
+
 ####输入
 1st line:  2 integers, N, M ( 1 <= N <= 50000, 1 <= M <= 50000 )
 
@@ -66,25 +70,28 @@ Come on! You need to do these operations as fast as possible.
 
 
 ####样例输入
-'''
+
+```
 7 4
 ABCDEFG
 CMD 1 2 5 C
 CMD 2 3 7 4
 CMD 3 3
 CMD 4 1 7
-'''
+```
+
 ####样例输出
-'''
+
+```
 HIMOFIN
-'''
+```
 
 ###分析
 本题是：环的思想+线段树。
 
 本题在处理cmd == 3的情况的时候，不需要移动字符串，而是采用“环”的思想，直接实现，处理i，j的时候直接加上start，再mod N：
 
-'''c++
+```c++
 int i, j;
 cin >> i >> j;
 i = (i - 1 + start + N) % N;
@@ -96,13 +103,14 @@ if (i > j)
 }
 else
 	query4(i, j, 1);
-'''
+```
 
 再这基础上，有两种解法，一种是普通的，不能AC。而另一种采用线段树，AC。
 
 ###解法1：普通解法，复杂度O(nm)
 
-'''
+
+```
 #include <iostream>
 #include <vector>
 #include <string>
@@ -207,13 +215,13 @@ int main()
 	return 0;
 }
 
-'''
+```
 
 ###解法2：线段树，复杂度O(mlogn)
 调了很久才AC，原因：习惯不好，在写程序的时候，要把所有的都想清楚，在实现的时候，某个tag不产生作用，其它的与此相关的变量也需要清零，而
 之前为了图一时的方便，没有清零，导致各种各样的错误。总之还是需要一个整体的思想，tag产生作用就把所有变量赋值，作用消失就清零。代码如下：
 
-'''c++
+```c++
 #include <iostream>
 #include <vector>
 #include <string>
@@ -426,6 +434,6 @@ int main()
 	return 0;
 }
 
-'''
+```
 
 
