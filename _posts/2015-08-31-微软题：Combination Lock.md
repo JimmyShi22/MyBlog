@@ -88,7 +88,7 @@ HIMOFIN
 
 ###分析
 本题是：环的思想+线段树。
-
+具体解法参考: (hihocoder)[http://hihocoder.com/discuss/question/2120]
 本题在处理cmd == 3的情况的时候，不需要移动字符串，而是采用“环”的思想，直接实现，处理i，j的时候直接加上start，再mod N：
 
 ```c++
