@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 《Programing Collective Intelligence》读书笔记之“相似度评价”
+title: 相似度评价--《Programing Collective Intelligence》读书笔记
 comments: true
 ---
 
