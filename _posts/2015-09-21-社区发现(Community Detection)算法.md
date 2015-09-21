@@ -5,7 +5,7 @@ comments: true
 ---
 本文主要转自csdn的文章：[Community Detection 算法 http://blog.csdn.net/itplus/article/details/9286905](http://blog.csdn.net/itplus/article/details/9286905)
 
-###算法描述
+##算法描述
 ![](http://img.blog.csdn.net/20130710080848421)
 
 ![](http://img.blog.csdn.net/20130710080858906)
@@ -17,10 +17,10 @@ comments: true
 
 ![](http://img.blog.csdn.net/20130710080925218)
 
-###已有算法
+##已有算法
 ![](http://img.blog.csdn.net/20130710081011421)
 
-###LPA
+##LPA
 ![](http://img.blog.csdn.net/20130710081045968)
   标签传播算法（LPA）的做法比较简单：
   
@@ -34,7 +34,7 @@ comments: true
 
 ![](http://img.blog.csdn.net/20130710081059265)
 
-###SPLA
+##SPLA
 ![](http://img.blog.csdn.net/20130710081109859)
 
 ![](http://img.blog.csdn.net/20130710081127656)
