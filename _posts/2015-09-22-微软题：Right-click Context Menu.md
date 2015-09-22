@@ -7,7 +7,7 @@ comments: true
 题目链接：[Right-click Context Menu](http://hihocoder.com/contest/hiho64/problem/1)
 
 ##分析
-本题是树形贪心。采用dfs序，每个顶点依次贪心算得最优解。难点在于贪心策略的选取。还有数据结构怎么建，有点繁琐，有点绕人。
+本题是树形的贪心。采用dfs序，每个顶点依次贪心算得最优解。难点在于贪心策略的选取。还有数据结构怎么建，有点繁琐，有点绕人。
 
 ###数据结构
 每个Row结构中存所有“子Sec”结构，Sec结构存其所包括的Row结构。看代码：
