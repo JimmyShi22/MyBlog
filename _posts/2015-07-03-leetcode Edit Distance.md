@@ -1,7 +1,8 @@
 ---
-layout: OJ
+layout: default
 title: leetcode Edit Distance
 comments: true
+kind : OJ
 ---
 题目链接：
 https://leetcode.com/problems/edit-distance/
