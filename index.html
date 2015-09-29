@@ -19,7 +19,15 @@ title: 文章目录
         	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         	{{ post.date | date: "%F" }} <br>        	
         {% endif %}
-    {% endfor %}	
+    {% endfor %}
+	<hr>
+	<b>算法</b><br>
+    {% for post in site.posts %}
+    	{% if post.kind == 'algorithm' %}
+        	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        	{{ post.date | date: "%F" }} <br>        	
+        {% endif %}
+    {% endfor %}
 	<hr>
 	<b>OJ</b><br>
     {% for post in site.posts %}
