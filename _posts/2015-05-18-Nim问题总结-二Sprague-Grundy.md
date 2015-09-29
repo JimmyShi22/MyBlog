@@ -2,6 +2,7 @@
 layout: default
 title: Nim问题总结-二Sprague-Grundy
 comments: true
+kind: OJ
 ---
 ##Sprague-Grundy 函数（转）
 ###声明
