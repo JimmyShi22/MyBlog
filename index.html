@@ -4,20 +4,26 @@ title: 文章目录
 ---
 
 <ul class="post-list">
+	<hr>
+	<b>ALL</b><br>
     {% for post in site.posts %}
         <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         {{ post.date | date: "%F" }} <br>
     {% endfor %}
 	<hr>
+	<b>知识</b><br>
     {% for post in site.posts %}
-    	{% if post.kind == 'OJ' %}
+    	{% if post.kind == 'knowledge' %}
         	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         	{{ post.date | date: "%F" }} <br>        	
         {% endif %}
     {% endfor %}	
 	<hr>
-    {% for post in site.posts.OJ %}
-        <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
-        {{ post.date | date: "%F" }} <br>
+	<b>OJ</b><br>
+    {% for post in site.posts %}
+    	{% if post.kind == 'OJ' %}
+        	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        	{{ post.date | date: "%F" }} <br>        	
+        {% endif %}
     {% endfor %}	
 </ul>
