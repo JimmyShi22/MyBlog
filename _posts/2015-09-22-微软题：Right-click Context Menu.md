@@ -2,6 +2,7 @@
 layout: default
 title: 微软题：Right-click Context Menu
 comments: true
+kind: OJ
 ---
 
 题目链接：[Right-click Context Menu](http://hihocoder.com/contest/hiho64/problem/1)
