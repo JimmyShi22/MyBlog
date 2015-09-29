@@ -2,6 +2,7 @@
 layout: default
 title: 微软题：Combination Lock
 comments: true
+kind: OJ
 ---
 
 链接：[hihocoder:week 61](http://hihocoder.com/contest/hiho61/problem/1)
