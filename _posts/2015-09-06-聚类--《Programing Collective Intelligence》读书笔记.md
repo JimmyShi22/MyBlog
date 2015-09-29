@@ -2,6 +2,7 @@
 layout: default
 title: 聚类--《Programing Collective Intelligence》读书笔记
 comments: true
+kind: algorithm
 ---
 
 ##聚类
