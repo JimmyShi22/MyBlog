@@ -7,8 +7,10 @@ title: 文章目录
 	<hr>
 	<b>ALL</b><br>
     {% for post in site.posts %}
-        <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
-        {{ post.date | date: "%F" }} <br>
+    	{% if post.kind == null %}
+        	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        	{{ post.date | date: "%F" }} <br>        	
+        {% endif %}
     {% endfor %}
 	<hr>
 	<b>知识</b><br>
