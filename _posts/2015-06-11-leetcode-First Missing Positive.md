@@ -2,6 +2,7 @@
 layout: default
 title: leetcode First Missing Positive
 comments: true
+kind: OJ
 ---
 
 ##leetcode-41 First Missing Positive
