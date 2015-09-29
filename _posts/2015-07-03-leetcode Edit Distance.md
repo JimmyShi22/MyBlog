@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: OJ
 title: leetcode Edit Distance
 comments: true
 ---
