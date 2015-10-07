@@ -2,7 +2,7 @@
 layout: default
 title: 相似度评价--《Programing Collective Intelligence》读书笔记
 comments: true
-kind: algorithm
+kind: PCI
 ---
 
 ##相似度评价
