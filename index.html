@@ -4,36 +4,52 @@ title: 文章目录
 ---
 
 <ul class="post-list">
-	<hr>
-	<b>ALL</b><br>
+    <hr>
+    <b>ALL</b><br>
     {% for post in site.posts %}
     	{% if post.kind == null %}
         	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         	{{ post.date | date: "%F" }} <br>        	
         {% endif %}
     {% endfor %}
-	<hr>
-	<b>知识</b><br>
+    <hr>
+    <b>知识</b><br>
     {% for post in site.posts %}
     	{% if post.kind == 'knowledge' %}
         	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         	{{ post.date | date: "%F" }} <br>        	
         {% endif %}
     {% endfor %}
-	<hr>
-	<b>算法</b><br>
+    <hr>
+    <b>算法</b><br>
     {% for post in site.posts %}
     	{% if post.kind == 'algorithm' %}
         	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         	{{ post.date | date: "%F" }} <br>        	
         {% endif %}
     {% endfor %}
-	<hr>
-	<b>OJ</b><br>
+    <hr>
+    <b>OJ</b><br>
     {% for post in site.posts %}
     	{% if post.kind == 'OJ' %}
         	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         	{{ post.date | date: "%F" }} <br>        	
         {% endif %}
-    {% endfor %}	
+    {% endfor %}
+    <hr>
+    <b>\<\<Programing Collective Intelligence\>\>--集体智慧编程</b><br>
+    {% for post in site.posts %}
+    	{% if post.kind == 'PCI' %}
+        	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        	{{ post.date | date: "%F" }} <br>        	
+        {% endif %}
+    {% endfor %}
+    <hr>
+    <b>\<\<Beauty of Programming\>\>--编程之美</b><br>
+    {% for post in site.posts %}
+    	{% if post.kind == 'BoP' %}
+        	<a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        	{{ post.date | date: "%F" }} <br>        	
+        {% endif %}
+    {% endfor %}
 </ul>
