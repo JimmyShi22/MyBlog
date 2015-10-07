@@ -2,7 +2,7 @@
 layout: default
 title: 社区发现(Community Detection)算法
 comments: true
-kind: PCI
+kind: algorithm
 ---
 本文主要转自csdn的文章：[Community Detection 算法 http://blog.csdn.net/itplus/article/details/9286905](http://blog.csdn.net/itplus/article/details/9286905)
 
