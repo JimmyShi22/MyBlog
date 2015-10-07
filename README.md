@@ -3,7 +3,7 @@
 layout: default<br>
 title: Hello World<br>
 comments: true<br>
-kind: OJ<br>
+kind: OJ/algorithm/knowledge/PCI/BoP<br>
 ---<br>
 使用forkosh插入公式的方法是<br>
 ```
