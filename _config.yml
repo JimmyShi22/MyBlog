@@ -1,6 +1,8 @@
 username: JimmyShi22
 baseurl: /myblog
 markdown: redcarpet
+redcarpet:
+    extensions: ["tables"]
 safe: false
 highlighter: pygments
 title: Jimmy Blog 
