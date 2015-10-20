@@ -11,7 +11,7 @@ kind: algorithm
 
 这里可以将基于merge sort的大规模数据排序分为三部分。 经过divide步之后， 数据分布如图所示： 
 
-![](http://img.blog.csdn.net/20150910095654173)
+<center>![](http://img.blog.csdn.net/20150910095654173)</center>
 
 最下端的为 *大量-短序列* 的合并； 
 中间一块为*中等数量-中等长度序列* 的合并； 
