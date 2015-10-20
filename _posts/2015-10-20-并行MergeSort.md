@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 并行MergeSort（并行排序算法）
+title: 并行MergeSort
 comments: true
 kind: algorithm
 ---
