@@ -1,6 +1,6 @@
 ---
 layout: default
-title: BitonicSort双调排序（并行排序算法）
+title: BitonicSort双调排序
 comments: true
 kind: algorithm
 ---
