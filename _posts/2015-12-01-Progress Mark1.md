@@ -2,7 +2,6 @@
 layout: default
 title: Progress Mark1
 comments: true
-kind: algorithm
 ---
 华中区高校研究生程序设计大赛
 
